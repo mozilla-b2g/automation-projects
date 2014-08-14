@@ -9,6 +9,10 @@ An "action log" we need the ability to bring the phone into a known state and re
 other "failure" this can be done in a verity of ways but a simple is example is waiting for the app to be launched then replaying
 the marionette actions (we probably need other types of actions too).
 
+## Fuzzing
+
+The ability to [fuzz](http://en.wikipedia.org/wiki/Fuzz_testing) our tests and perform randomization (such as killing the homescreen while doing another action or tapping random buttons / areas). Is likely another form of testing which could help us catch unexpected errors or leaks.
+
 ## Failure Modes
 
 "Failures" defining failures outside of crashes is also important ideally we could plug new forms of "failure" into the test such as
