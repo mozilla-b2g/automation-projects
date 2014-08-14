@@ -1,0 +1,3 @@
+Getting new contributors set up to build and develop with B2G can be a hassle, as you need to install dependencies and other useful software and installations to get up and running. Having a Vagrant script that can easily stand up a docker development environment would ease the barrier to entry and make getting started with code much faster.
+
+It may also be helpful to provide public docker containers with pre-fetched build configurations, e.g. Flame or Tarako, which would save from having to do a manual repository sync or one-off fetches to get started over the Great Wall of China.
