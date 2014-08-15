@@ -10,5 +10,6 @@ For taskcluster this may mean introducing a new type of worker which essentially
 
 Some other vague notes:
 
+ - RR currently only runs on 32bit machines (and does not work on arm!)
  - roc offered to help fix aws bugs
  - at the time of writing the [cpu](http://man7.org/linux/man-pages/man4/cpuid.4.html) [id](http://en.wikipedia.org/wiki/CPUID) must be the same as the machine recording to replay correctly. In theory this means things should be portable within the same aws node type (we must confirm this) at minimum we can assert that the worker we bring up has the same cpu id as we expect.
