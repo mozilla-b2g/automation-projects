@@ -25,3 +25,4 @@ We have the ability to pull quite a few things off the phone during failure some
   - log of usage stats
   - memory profile (not usable in the crash case)
   - crash stats
+  - I believe [memory montioring](/memory_monitor.md) will be rolled into this...
