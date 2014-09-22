@@ -27,6 +27,14 @@ We have the ability to pull quite a few things off the phone during failure some
   - crash stats
   - I believe [memory monitoring](/memory_monitor.md) will be rolled into this...
 
+Initial thought on how to implement monitoring:
+  - dump data (in a structured format [though likely not json] into syslog
+  - implement proof of concept streaming parser to aggregate log data
+  - build histogram of overall usage + monitor for spikes
+  - implement "spike" notifications in test harness (alterantively we can try to implmenet this in gecko
+  - integrate "spike" notifications into all test harnesses so we can fail or alert in particular conditions
+  - keep track of all histogram data and use it to compare between commits (i.e. This commit on this test uses X amount of memory but is using N% more now)
+
 ## Power Harness
 
 Do we want to integrate JHyland's power harness and also grab power draw measurements? Or is that best separate (i.e. JHylands talked about creating a perf-try server).
