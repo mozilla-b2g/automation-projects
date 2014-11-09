@@ -19,3 +19,5 @@ Steps:
   - For all external dependencies (which we can probably avoid
     vendoring) use an external caching technique like described in
     https://bugzilla.mozilla.org/show_bug.cgi?id=1094331
+
+A proof of concept with documentation on how to take it further: https://github.com/lightsofapollo/npm_monolithic
