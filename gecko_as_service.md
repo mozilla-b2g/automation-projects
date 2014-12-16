@@ -1,4 +1,4 @@
-# Gecko API
+# Gecko As A Service
 
 Building and managing a test framework for gecko is non-trival there are common concerns everyone needs.
 
@@ -16,3 +16,14 @@ Use cases:
  - tesitng OSX from Linux
  - testing Windows from Linux
  - Etc...
+
+To validate this proof of concept we would need to do the following:
+
+ - see if we can actually make OSX/Windows enter/exit in a clean state
+   where gecko can run concurrently.
+
+ - monitor utilization (how much can we run in parallel before
+   performance is fucked up)
+
+ - can we debug it? gdb must work and we need sufficient logging. (Video
+   / Xvfb for local testing would be awesome and doable too)
